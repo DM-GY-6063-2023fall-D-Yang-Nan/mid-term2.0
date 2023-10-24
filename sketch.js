@@ -8,15 +8,17 @@ let darkblue = '#1e606e';
 let lightblue = '#5ab9a8';
 
 let targetSpeed = 8;  // 目标速度
+let music;
 
 
 function preload(){
   img = loadImage('reshuiping-01.png');
+//   music = loadSound('music.mp3');
 }
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
-    
+    // music.play();
     noSmooth();
     strokeCap(SQUARE);
 
@@ -30,8 +32,9 @@ function setup() {
 }
 
 function draw() {
-    background(darkblue);
 
+    background(darkblue);
+    
     stroke('LemonChiffon');
   strokeWeight(1);
   noFill();
