@@ -7,7 +7,7 @@ let brown = '#2d1b00';
 let darkblue = '#1e606e';
 let lightblue = '#5ab9a8';
 
-let targetSpeed = 8;  // 目标速度
+let targetSpeed = 15;  // 目标速度
 let music;
 let summer;
 
@@ -28,7 +28,7 @@ function setup() {
     horizon = (height-(height/4));
 
     // 初始化树
-    for (let i = 0; i < 60; i++) {  // 这里我们添加了40棵树
+    for (let i = 0; i < 40; i++) {  // 这里我们添加了40棵树
         trees.push(new Tree(random(width), random(horizon, height)));
     }
 }
