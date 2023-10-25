@@ -1,6 +1,6 @@
 # Mid-term-project_ Week05
 
-I've chosen a film titled "Kikujiro," which is a Japanese movie directed by Takeshi Kitano. The story follows a middle school teacher named Kikujiro and his stepson, Masao. After the death of his wife, the two embark on a journey to find Masao's biological mother. Throughout this journey, they develop a deep bond and influence each other, growing together.
+I've chosen a film titled "Kikujiro," which is a Japanese movie directed by Takeshi Kitano. "Kikujiro" tells the heartwarming story of a young boy, Masao, who embarks on a summer journey to find his estranged mother. Accompanied by his neighbor, the crude and childlike Kikujiro, their adventures are filled with laughter, tears, and bonding. Despite challenges, Kikujiro earnestly tries to bring joy to Masao. Upon finding his mother with a new family, Masao decides not to intrude, returning home with a deeper connection to Kikujiro. The tale emphasizes friendship, family, and personal growth.
 
 ![D0U9bX.jpg](https://imgpile.com/images/D0U9bX.jpg)
 
@@ -128,3 +128,5 @@ Eventually I tried to add sounds to my project, but it never worked. I don't kno
 ![G4t5tG.png](https://imgpile.com/images/G4t5tG.png)
 
 ![G4tRHa.png](https://imgpile.com/images/G4tRHa.png)
+
+Eventually I learned that some browsers don't play sounds directly, they have to be button pressed to do so, so I created the sound function separately again

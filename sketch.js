@@ -9,16 +9,18 @@ let lightblue = '#5ab9a8';
 
 let targetSpeed = 8;  // 目标速度
 let music;
+let summer;
 
 
 function preload(){
   img = loadImage('reshuiping-01.png');
-//   music = loadSound('music.mp3');
+  music = loadSound('music.mp3');
+  summer = loadSound('summer.mp3');
 }
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
-    // music.play();
+
     noSmooth();
     strokeCap(SQUARE);
 
@@ -34,7 +36,8 @@ function setup() {
 function draw() {
 
     background(darkblue);
-    
+
+    //sun
     stroke('LemonChiffon');
   strokeWeight(1);
   noFill();
@@ -99,7 +102,7 @@ class Tree {
     update() {
         // 使树向鼠标摆动
         if (mouseX > width/2) {
-            if (this.x3 < (this.x + 25)) {
+            if (this.x3 < (this.x + 40)) {
                 this.x3 = this.x3 + this.jit;
                 this.x4 = this.x4 + this.jit;
             } else {
@@ -120,6 +123,7 @@ class Tree {
     move() {  
         if (mouseIsPressed) {
             this.speed = lerp(this.speed, 0, 0.03);  // 当鼠标按下时，逐渐减小速度到0
+            
         } else {
             this.speed = lerp(this.speed, targetSpeed, 0.03);  // 当鼠标抬起时，逐渐恢复速度
         }
@@ -150,5 +154,22 @@ class Tree {
 
         
         
+    }
+}
+
+function mousePressed() {
+    if (!music.isPlaying()) {
+        music.play();
+    }
+    if (!summer.isPlaying()) {
+        summer.play();
+    }
+}
+function playMusic() {
+    if (!music.isPlaying()) {
+        music.play();
+    }
+    if (!summer.isPlaying()) {
+        summer.play();
     }
 }
